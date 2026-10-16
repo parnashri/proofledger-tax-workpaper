@@ -6,6 +6,5 @@ COPY *.html *.py packet.json ./
 COPY static ./static
 ENV PYTHONUNBUFFERED=1
 ENV PROOFLEDGER_DB=/data/proofledger.sqlite3
-VOLUME ["/data"]
 EXPOSE 8081
 CMD ["python3", "server.py", "--host", "0.0.0.0", "--port", "8081"]
