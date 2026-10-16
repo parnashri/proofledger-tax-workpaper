@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0c1728"><title>ProofLedger · Explainable Tax Workpaper</title><link rel="stylesheet" href="static/style.css"></head>
+<body>
+<div id="app">
+<aside class="sidebar">
+  <div class="brand"><span class="brand-logo">◈</span><span><strong>ProofLedger</strong><small>EXPLAINABLE WORKPAPER</small></span></div>
+  <div class="engagement-id">ENGAGEMENT <strong>CL-20417 · 2025</strong></div>
+  <div class="nav-label">WORKSPACE</div>
+  <nav id="nav" aria-label="Main navigation">
+    <button data-route="overview" class="active"><span>◫</span> Overview</button>
+    <button data-route="calculations"><span>∑</span> Calculation lab</button>
+    <button data-route="exceptions"><span>◇</span> Exceptions <i id="navIssues"></i></button>
+    <button data-route="return"><span>≡</span> Return explorer</button>
+    <button data-route="records"><span>▤</span> Area records</button>
+    <button data-route="documents"><span>▧</span> Evidence library</button>
+    <button data-route="judgments"><span>§</span> Judgment ledger</button>
+    <button data-route="decisions"><span>⎇</span> Decision studio</button>
+    <button data-route="clients"><span>♧</span> People & client portal</button>
+    <button data-route="inbox"><span>✉</span> Reviewer inbox</button>
+    <button data-route="review"><span>✓</span> Review desk</button>
+    <button data-route="coverage"><span>☑</span> Completeness</button>
+    <button data-route="filing-control"><span>⇧</span> Filing control</button>
+    <button data-route="operations"><span>◷</span> Operations</button>
+    <button data-route="planning"><span>↗</span> Next-year planning</button>
+    <button data-route="timeline"><span>◷</span> Timeline</button>
+    <button data-route="firm-portfolio"><span>▦</span> Firm portfolio</button>
+    <button data-route="firm"><span>⚙</span> Firm standards</button>
+  </nav>
+  <div class="sidebar-bottom"><div class="status-dot"><span></span> Workspace storage: check login</div><p>Shared-server mode supports collaborative SQLite storage. Static fallback is browser-only.</p><button class="outline-light" id="exportTop">⇩ Export review record</button></div>
+</aside>
+<main class="main">
+ <header class="topbar"><div class="crumb"><span>2025 JOINT RETURN</span><strong id="sectionTitle">Overview</strong></div><div class="top-actions"><label>Snapshot <select id="versionSelect"><option value="v1">v1 · March 4</option><option value="v2">v2 · March 19</option><option value="v3" selected>v3 · June 23</option></select></label><label>Acting as <select id="staffSelect"></select></label><div class="avatar" id="avatar">PR</div></div></header>
+ <div id="flash" role="status" aria-live="polite"></div>
+ <div class="content" id="content"><div class="loading">Loading the household packet…</div></div>
+</main></div>
+<div id="drawerBackdrop" class="drawer-backdrop hidden" tabindex="-1"></div>
+<aside class="drawer hidden" id="drawer" role="dialog" aria-modal="true" aria-label="Detailed evidence"><div id="drawerBody"></div></aside>
+<script src="static/session.js" defer></script><script src="static/app.js" defer></script><script src="static/enhancements.js" defer></script><script src="static/calculations.js" defer></script><script src="static/collaboration.js" defer></script><script src="static/judgments.js" defer></script><script src="static/planning.js" defer></script><script src="static/people_filing.js" defer></script><script src="static/firm_workflows.js" defer></script>
+</body></html>
